@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">JournalApp</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="current_user">CURRENT_USER</string>
+    <string name="prompt_password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_add_journal_entry">Save</string>
+    <string name="action_update_journal_entry">Update</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="entity_name">journal_entries</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="link_for_new_account">Create a new account</string>
+    <string name="selected_journal_entry">SELECTED_JOURNAL_ENTRY</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+
+    <string name="action_edit_journal_entry">Edit</string>
+</resources>
