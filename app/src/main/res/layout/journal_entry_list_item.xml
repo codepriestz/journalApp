@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="@dimen/activity_vertical_margin">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        app:srcCompat="@color/colorPrimaryLight" />
+
     <TextView
         android:id="@+id/date_edited"
-        android:layout_width="wrap_content"
+        android:layout_width="72dp"
         android:layout_height="match_parent"
         android:layout_gravity="center"
+        android:background="@color/colorPrimary"
         android:gravity="center"
-        android:textColor="@color/colorPrimaryDark" />
+        android:text="yes"
+
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,14 +38,18 @@
             android:id="@+id/journal_entry_title_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            android:maxLength="30"
+            android:maxLines="1"
+            android:text="Telecoms"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
         <TextView
             android:id="@+id/journal_entry_content_id"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:text="deliverance" />
     </LinearLayout>
 
 </LinearLayout>

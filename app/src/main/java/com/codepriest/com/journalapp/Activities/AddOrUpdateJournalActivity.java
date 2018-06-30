@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -25,7 +24,7 @@ import java.util.Map;
 
 public class AddOrUpdateJournalActivity extends BaseActivity implements DatabaseReference.CompletionListener {
     DatabaseReference databaseReference;
-    TextInputEditText mTitleView;
+    EditText mTitleView;
     EditText mContentView;
     Bundle bundle;
     boolean isUpdate = false;

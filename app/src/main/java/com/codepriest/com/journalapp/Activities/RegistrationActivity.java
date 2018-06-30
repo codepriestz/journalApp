@@ -118,7 +118,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         } else {
             Toast.makeText(this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
             Log.d(RegistrationActivity.class.getSimpleName(), task.getException().getMessage());
-            mProgressbar.setVisibility(View.INVISIBLE);
+            mProgressbar.setVisibility(View.GONE);
             mRegistrationForm.setVisibility(View.VISIBLE);
         }
 

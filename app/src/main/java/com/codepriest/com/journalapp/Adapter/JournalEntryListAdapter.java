@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.codepriest.com.journalapp.Model.JournalEntry;
 import com.codepriest.com.journalapp.R;
 
-import org.ocpsoft.prettytime.PrettyTime;
+import java.text.SimpleDateFormat;
 
 /**
  * Created by codepriest on 27/06/2018.
@@ -45,10 +45,10 @@ public class JournalEntryListAdapter extends RecyclerView.Adapter {
 
         JournalEntryViewHolder journalEntryViewHolder = (JournalEntryViewHolder) holder;
         JournalEntry journalEntry = mjournalEntries[position];
-        journalEntryViewHolder.mContent.setText(journalEntry.getContent().length() > 10 ? String.format("%s ...", journalEntry.getContent().substring(0, 10)) : journalEntry.getContent());
-        PrettyTime prettyTime = new PrettyTime();
-        journalEntryViewHolder.mDateEditted.setText(prettyTime.format(journalEntry.getUpdateDate()));
-        journalEntryViewHolder.mTitle.setText(journalEntry.getTitle());
+        journalEntryViewHolder.mContent.setText(journalEntry.getContent().length() > 30 ? String.format("%s...", journalEntry.getContent().substring(0, 27)) : journalEntry.getContent());
+        SimpleDateFormat simpleFormatter = new SimpleDateFormat("d-MMM ''yy");
+        journalEntryViewHolder.mDateEditted.setText(simpleFormatter.format(journalEntry.getCreatedDate()));
+        journalEntryViewHolder.mTitle.setText(journalEntry.getTitle().length() > 30 ? String.format("%s...", journalEntry.getTitle().substring(0, 27)) : journalEntry.getTitle());
     }
 
     @Override
